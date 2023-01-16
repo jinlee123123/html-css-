@@ -1,0 +1,43 @@
+.item-box{
+    margin-top: 100px;
+    width: 1000px;
+    height: 200px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    float: left;
+    width: 760px;
+    height: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.pic{
+    width: 180px;
+    height: 200px;
+    float: right;
+    background-color: black;
+}
+.uesr{
+    
+}
+.profile{
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 30px;
+    float: left;
+}
+p{
+    margin: 5px;
+}
+h3{
+    margin: 3px;
+}
+.navbar> li{
+    display: inline-block;
+}
+/* 셀렉터이용 */

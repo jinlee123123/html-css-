@@ -1,0 +1,75 @@
+// @use 'reset'; <-reset.scss import문법
+//변수도 가져와서 쓸 수 있음. 다른파일의 변수 실때 @include 파일명.mixin이름
+
+
+
+$main-color : #2a4cb2;
+$main-size : 16px;
+
+//$표시 -> 변수 생성
+//관리 수정에 편함
+
+.container{
+    background-color: $main-color;
+    font-size: $main-size - 2px;
+    width: 200px;
+    height: 200px;
+}
+.container{
+    h4{
+        font-size: 24px;
+        //nesting 문법 관련있는 class들 묶을 때 좋음
+    }
+}
+//extend문법
+%btn {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.btn-green{
+    @extend %btn;
+    color: green;
+}
+
+%box {
+    width: 200px;
+    height: 200px;
+    padding: 20px; 
+}
+
+.box-green{
+    @extend %box;
+    background-color: green;
+}
+.box-red{
+    @extend %box;
+    background-color: red;
+}
+.box-black{
+    @extend %box;
+    background-color: black;
+}
+
+//@mixin 문법
+
+@mixin 큰글자($변수1,$변수2,$변수3) {
+    font-size: $변수1;
+    letter-spacing: $변수2;
+    #{ $변수3 } : 20px;
+}
+
+h2{
+    @include 큰글자(20px,1px,padding)
+}
+
+@mixin col($width) {
+    width: $width;
+}
+
+.row{
+    .col-6{
+        @include col( 50%)
+    }
+}

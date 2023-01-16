@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(145, 143, 143);
+}
+.box{
+    margin-top: 500px;
+    height: 2000px;
+    background-color: lightgray;
+
+    .text{
+        margin-left: 200px;
+        float: left;
+        width: 500px;
+    }
+    .image{
+        float:right;
+        width: 1000px;
+        position: sticky;
+        // div 넘어가면 sticky 끝난다.
+        top: 100px
+    }
+}

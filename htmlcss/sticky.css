@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(145, 143, 143);
+}
+
+.box {
+  margin-top: 500px;
+  height: 2000px;
+  background-color: lightgray;
+}
+.box .text {
+  margin-left: 200px;
+  float: left;
+  width: 500px;
+}
+.box .image {
+  float: right;
+  width: 1000px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}/*# sourceMappingURL=sticky.css.map */

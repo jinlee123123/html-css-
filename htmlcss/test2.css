@@ -1,0 +1,48 @@
+.container {
+  background-color: #2a4cb2;
+  font-size: 14px;
+  width: 200px;
+  height: 200px;
+}
+
+.container h4 {
+  font-size: 24px;
+}
+
+.btn-green {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.btn-green {
+  color: green;
+}
+
+.box-black, .box-red, .box-green {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+.box-green {
+  background-color: green;
+}
+
+.box-red {
+  background-color: red;
+}
+
+.box-black {
+  background-color: black;
+}
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+.row .col-6 {
+  width: 50%;
+}/*# sourceMappingURL=test2.css.map */

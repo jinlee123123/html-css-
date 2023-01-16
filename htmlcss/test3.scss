@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.sh-list{
+    li{
+        list-style: none;
+        border: 1px solid #eee;
+        padding: 15px;
+    }
+    li:hover{
+        background-color: cornflowerblue;
+    }
+}
+
+.ani-text{
+    margin-top: 1rem;
+}
+
+.ani-text:hover{
+    animation-name: moving;
+    animation-duration: 1s;
+}
+
+.btn-blue{
+    margin: auto;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(140, 140, 219);
+    color: aliceblue;
+    border-radius: 5px;
+
+    p{
+        padding: 5px;
+    }
+}
+.btn-blue:hover{
+    animation-name: btn-moving2;
+    animation-duration: 1s;
+}
+.menu{
+    text-align: center;
+    position: fixed;
+    color: #eee;
+    width: 500px;
+    height: 100%;
+    background-color: black;
+    transform: translate(-300px);
+    transition: all 1s;
+    h4{
+
+        transform: translate(150px);
+        transition: all 1s;
+    }
+}
+.menu:hover{
+    transform: translate(0px);
+    h4{
+        transform: translate(0px);
+    }
+}
+
+
+
+
+@keyframes moving {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+@keyframes btn-moving {
+    0%{
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+
+}
+
+@keyframes btn-moving2 {
+    0%{
+        transform: rotate(0);
+    }
+    35%{
+        transform: rotate(-10deg);
+    }
+    60%{
+        transform: rotate(10deg);
+    }
+    70%{
+        transform: scale(1.5);
+    }
+}

@@ -1,0 +1,130 @@
+body{
+    padding: 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+div,input,textarea{
+    box-sizing: border-box;
+}
+
+.main-background{
+    background-color: aquamarine;
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-box{
+    background-color: black;
+    width: 80%;
+    max-width: 600px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    bottom: 100px;
+    box-sizing: border-box;
+    /* box-sizing을 쓰면 padding border 포함함 padding 추가시 witdh가 커지는 거 방지. */
+}
+
+.back{
+    padding: 1px;
+    background-color: gray;
+    width: 100%;
+    height: 1500px;
+}
+.form{
+    padding: 30px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 50%;
+    height: 1000px;
+
+}
+.email input{
+    width: 100%;
+    box-sizing: border-box;
+}
+.w-50{
+    width: 50%;
+    float: left;
+}
+.w-100{
+    width: 100%;
+}
+.w-100 textarea{
+    width: 100%;
+    height: 500px;
+}
+.yello-btn{
+
+    display: block;
+    margin-left: auto;
+    float: right;
+    background-color: goldenrod;
+}
+
+.cart{
+    padding: 300px;
+    width: 100%;
+    height: 1500px;
+    background-color: #c2d3de;
+}
+.cart h3{
+    color: blue;
+    
+}
+.cart table{
+    background-color: aliceblue;
+    border-collapse: collapse;
+}
+.img{
+    display: block;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+th,td{
+    padding-left: 50px;
+    border-bottom: rgb(76, 128, 145) solid 1px;
+}
+.cart th:nth-child(2){
+    width: 600px;
+}
+.cart th:nth-child(5){
+    width: 100px;
+}
+
+.cart button{
+    color: antiquewhite;
+    background-color: rgb(6, 6, 92);
+    margin-top:  20px;
+    float: right;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+}
+.cart button:hover{
+    background-color: antiquewhite; 
+}
+.cart button:active{
+    background-color: black;
+}
+
+.flex-item{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    margin: 10px;
+}
+.flex-container{
+    display: flex;
+    /* flex-direction: row; 가 원래 기본속성 바꿀라면 column */
+    height: 1000px;
+    justify-content: center;
+    align-items: center;
+}
